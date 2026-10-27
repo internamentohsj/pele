@@ -7,7 +7,7 @@ import {getFirestore,collection,doc,getDoc,getDocs,addDoc,updateDoc,query,where,
 // SUBSTITUA pelas configurações do seu projeto Firebase Web.
 const firebaseConfig={apiKey:'AIzaSyCCGumKTiFrvU3pbLyvq-6g2PrEttnx7h8',authDomain:'comiss-pele.firebaseapp.com',projectId:'comiss-pele',storageBucket:'comiss-pele.firebasestorage.app',messagingSenderId:'684909755969',appId:'1:684909755969:web:5099699931bdfb648810c0'};
 const LOGIN_EMAILS={admin:'admin@comissaopele.com',enfermeiro:'enfermeiro@comissaopele.com'};
-const UID_ROLES={'9H5dS4MF9deixAGCU4hZRczrRXa2':'admin','jLWoxKREiOUnv1x9fusNzNky0X42':'enfermeiro'};
+const UID_ROLES={'jLWoxKREiOUnv1x9fusNzNky0X42':'admin','9H5dS4MF9deixAGCU4hZRczrRXa2':'enfermeiro'};
 const $=id=>document.getElementById(id), esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let auth,db,role='',patients=[],lesions=[],evaluations=[],materials=[];
 const msg=(s,bad=false)=>{ $('appMsg').textContent=s;$('appMsg').className=bad?'error':'ok'};
